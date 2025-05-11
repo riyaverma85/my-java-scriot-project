@@ -51,55 +51,376 @@ font-family:Georgia, 'Times New Roman', Times, serif;
      transform:perspective(15);
 }
 
-.two{
-    height: 100vh;
-    width: 100%;
+
+  
+
+/* =============================== */
+body {
+  font-family: Arial, sans-serif;
+  background: #39e7e4;
+  margin: 0;
+  padding: 0;
 }
-#video-background{
-    width: 100%;
-    height: 100vh;
-    padding-left: 0;
+
+header {
+  background: #0077cc;
+  padding: 1em;
+  color: white;
+  text-align: center;
 }
+
+nav a {
+  margin: 0 1em;
+  color: white;
+  text-decoration: none;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 5em auto;
+  background: rgb(252, 249, 249);
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 100%;
+  padding: 0.8em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 0.8em;
+  background: #0797fd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  background: #083f65;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+/* ======================================= */
+
 
 .hero {
-    background: url('https://images.unsplash.com/photo-1588776814546-79e9c3f92092?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-    color:black;
-    padding: 100px 20px;
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 40px;
-    padding-left: 60%;
-  }
-
-  .hero p {
-    font-size: 20px;
-    margin: 15px 0;
-    padding-left: 60%;
-  }
-
-  .hero button {
-    padding: 12px 25px;
-    font-size: 16px;
-    background-color:rgb(93, 230, 243);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    padding-left: 60%;
-    margin-right: 0;
-  }
-
-  .hero button:hover {
-    background-color: #16a34a;
-  }@media (max-width: 768px) {
-    .hero h1 {
-      font-size: 30px;
-    }
-
-    .hero p {
-      font-size: 16px;
-    }
-  }
-
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 5%;
+        }
+        
+        .hero-content {
+            flex: 1;
+            padding-right: 2rem;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+        
+        .hero-image {
+            flex: 1;
+            text-align: center;
+            height:50%;
+          
+        }
+        
+        
+        /* Appointment booking form */
+        .booking-card {
+            background: rgba(82, 61, 203, 0.54);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .booking-card h3 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #333;
+        }
+        
+        .booking-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #0d6efd;
+        }
+        
+        .booking-form .btn {
+            grid-column: span 2;
+            padding: 0.75rem;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        
+        /* Features section */
+        .features {
+            background-color: rgb(56, 152, 178);
+            padding: 5rem 5%;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            background-color: #e7f1ff;
+            color: #0d6efd;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Doctors section */
+        .doctors {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .doctors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .doctor-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .doctor-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .doctor-image {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .doctor-info {
+            padding: 1.5rem;
+        }
+        
+        .doctor-info h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .doctor-specialty {
+            color: #0d6efd;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .doctor-rating {
+            color: #ffc107;
+            margin-bottom: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 3rem 5%;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .footer-links h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid #444;
+            color: #ddd;
+        }
+        
+        /* Mobile menu */
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #333;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .navbar nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                padding: 2rem;
+                transition: right 0.3s;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+            
+            .navbar nav.active {
+                right: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                margin-bottom: 2rem;
+            }
+            
+            .auth-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 2rem 5%;
+            }
+            
+            .hero-content {
+                padding-right: 0;
+                margin-bottom: 2rem;
+            }
+            
+            .booking-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .booking-form .btn {
+                grid-column: span 1;
+            }
+        }
