@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="main">
+    <div class="container about-grid">
+            <div class="about-image">
+                <img src="./medical-team.webp" alt="Medical team">
+            </div>
+            <div class="about-content">
+                <h2>Our Mission</h2>
+                <p>Founded in 2010, MediCare Clinic has been at the forefront of providing exceptional healthcare services to our community. Our mission is to deliver high-quality, personalized medical care in a compassionate and comfortable environment.</p>
+                <p>With a team of experienced medical professionals and state-of-the-art facilities, we are committed to improving the health and well-being of every patient who walks through our doors.</p>
+                <p>At MediCare, we believe in a holistic approach to healthcare that addresses not just the symptoms but the overall well-being of our patients. Our comprehensive services range from preventive care to specialized treatments, all tailored to meet your individual needs.</p>
+            </div>
+        </div>
+</body>
+
+<style>
+body{
+    background-color: rgb(43, 133, 235,0.54);
+}
+    
+    .about-section {
+            padding: 80px 0;
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+             background-color: aquamarine;
+        }
+        
+        .about-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+           
+        }
+        
+        .about-image img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #0070d1;
+        }
+        
+        .about-content p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds2.min.js"></script>
+
+</html>
